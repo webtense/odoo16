@@ -1,8 +1,8 @@
 # Fecha: 2024-12-04
 # Nombre del archivo: inspeccion.py
-# Versión del archivo: V2
+# Versión del archivo: V3
 
-from odoo import models, fields
+from odoo import models, fields, api
 
 class Inspeccion(models.Model):
     _name = 'btr.inspeccion'
@@ -22,3 +22,21 @@ class Inspeccion(models.Model):
         string="Documentos Adjuntos",
         help="Archivos relacionados con esta inspección"
     )
+    new_attachment = fields.Binary(string="Subir Documento")
+    new_attachment_name = fields.Char(string="Nombre del Documento")
+
+    @api.model
+    def attach_document(self):
+        """Crea un nuevo archivo adjunto desde el campo de carga"""
+        if self.new_attachment:
+            attachment = self.env['ir.attachment'].create({
+                'name': self.new_attachment_name or "Documento Adjunto",
+                'type': 'binary',
+                'datas': self.new_attachment,
+                'res_model': self._name,
+                'res_id': self.id,
+            })
+            self.attachment_ids = [(4, attachment.id)]
+            # Limpia los campos después de subir el archivo
+            self.new_attachment = False
+            self.new_attachment_name = False
