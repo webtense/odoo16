@@ -1,0 +1,24 @@
+<!-- Fecha: 2024-12-04 -->
+<!-- Nombre del archivo: inspeccion_views.xml -->
+<!-- Versión del archivo: V1 -->
+
+<odoo>
+    <record id="view_form_inspeccion" model="ir.ui.view">
+        <field name="name">inspeccion.form</field>
+        <field name="model">btr.inspeccion</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="fecha_inspeccion"/>
+                        <field name="estado"/>
+                        <field name="entidad_id"/>
+                        <field name="tipo_id"/>
+                        <field name="notas"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

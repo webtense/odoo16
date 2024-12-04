@@ -1,0 +1,16 @@
+<!-- Fecha: 2024-12-04 -->
+<!-- Nombre del archivo: inspeccion_data.xml -->
+<!-- Versión del archivo: V1 -->
+
+<odoo>
+    <data>
+        <!-- Ejemplo de datos iniciales de inspección -->
+        <record id="inspeccion_ejemplo_1" model="btr.inspeccion">
+            <field name="name">Inspección Inicial</field>
+            <field name="fecha_inspeccion">2024-12-10</field>
+            <field name="estado">proxima</field>
+            <field name="entidad_id" ref="entidad_inspectora_1"/>
+            <field name="tipo_id" ref="tipo_inspeccion_seguridad"/>
+        </record>
+    </data>
+</odoo>

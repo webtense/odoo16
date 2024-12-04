@@ -1,0 +1,12 @@
+<!-- Fecha: 2024-12-04 -->
+<!-- Nombre del archivo: security.xml -->
+<!-- Versión del archivo: V1 -->
+
+<odoo>
+    <data>
+        <!-- Definición de reglas de acceso básicas -->
+        <record id="group_inspeccion_user" model="res.groups">
+            <field name="name">Usuarios de Inspección</field>
+        </record>
+    </data>
+</odoo>
