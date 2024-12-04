@@ -4,7 +4,6 @@
 
 <odoo>
     <data>
-        <!-- Ejemplo de entidades inspectoras -->
         <record id="entidad_inspectora_1" model="btr.entidad.inspectora">
             <field name="name">Entidad de Seguridad</field>
             <field name="contacto">Juan Pérez</field>
