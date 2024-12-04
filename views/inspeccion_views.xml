@@ -1,24 +1,22 @@
-<!-- Fecha: 2024-12-04 -->
-<!-- Nombre del archivo: inspeccion_views.xml -->
-<!-- Versión del archivo: V1 -->
-
 <odoo>
-    <record id="view_form_inspeccion" model="ir.ui.view">
-        <field name="name">inspeccion.form</field>
-        <field name="model">btr.inspeccion</field>
-        <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <group>
-                        <field name="name"/>
-                        <field name="fecha_inspeccion"/>
-                        <field name="estado"/>
-                        <field name="entidad_id"/>
-                        <field name="tipo_id"/>
-                        <field name="notas"/>
-                    </group>
-                </sheet>
-            </form>
-        </field>
+    <!-- Acción para listar inspecciones -->
+    <record id="action_btr_inspecciones" model="ir.actions.act_window">
+        <field name="name">Inspecciones</field>
+        <field name="res_model">btr.inspeccion</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+    <!-- Acción para entidades inspectoras -->
+    <record id="action_btr_entidades" model="ir.actions.act_window">
+        <field name="name">Entidades Inspectoras</field>
+        <field name="res_model">btr.entidad.inspectora</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Acción para tipos de inspección -->
+    <record id="action_btr_tipos" model="ir.actions.act_window">
+        <field name="name">Tipos de Inspección</field>
+        <field name="res_model">btr.tipo.inspeccion</field>
+        <field name="view_mode">tree,form</field>
     </record>
 </odoo>
