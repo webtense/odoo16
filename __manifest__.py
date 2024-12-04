@@ -20,6 +20,7 @@
         'views/inspeccion_views.xml',
         'views/entidad_inspectora_views.xml',
         'views/tipo_inspeccion_views.xml',
+        
         'views/menus_views.xml',
         'data/entidad_inspectora_data.xml',
         'data/tipo_inspeccion_data.xml',

@@ -1,6 +1,6 @@
 # Fecha: 2024-12-04
 # Nombre del archivo: tipo_inspeccion.py
-# Versión del archivo: V2
+# Versión del archivo: V3
 
 from odoo import models, fields
 
@@ -9,4 +9,4 @@ class TipoInspeccion(models.Model):
     _description = 'Tipo de Inspección'
 
     name = fields.Char(string="Nombre del Tipo", required=True)
-    description = fields.Text(string="Descripción", help="Detalles adicionales sobre el tipo de inspección.")
+    descripcion = fields.Text(string="Descripción", help="Detalles adicionales sobre el tipo de inspección.")
