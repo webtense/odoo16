@@ -1,7 +1,3 @@
-# Fecha: 2024-12-04
-# Nombre del archivo: tipo_inspeccion.py
-# Versión del archivo: V1
-
 from odoo import models, fields
 
 class TipoInspeccion(models.Model):
