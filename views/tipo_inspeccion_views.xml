@@ -1,30 +1,4 @@
 <odoo>
-    <!-- Acción para listar Tipos de Inspección -->
-    <record id="action_btr_tipos" model="ir.actions.act_window">
-        <field name="name">Tipos de Inspección</field>
-        <field name="res_model">btr.tipo.inspeccion</field>
-        <field name="view_mode">tree,form</field>
-        <field name="help" type="html">
-            <p>
-                Aquí puedes gestionar los diferentes tipos de inspección que se realizan.
-                Selecciona un tipo para ver detalles o agregar uno nuevo.
-            </p>
-        </field>
-    </record>
-
-    <!-- Vista en modo lista (tree) para Tipos de Inspección -->
-    <record id="view_tree_tipo_inspeccion" model="ir.ui.view">
-        <field name="name">tipo.inspeccion.tree</field>
-        <field name="model">btr.tipo.inspeccion</field>
-        <field name="arch" type="xml">
-            <tree>
-                <field name="name"/>
-                <field name="description"/>
-            </tree>
-        </field>
-    </record>
-
-    <!-- Vista en modo formulario (form) para Tipos de Inspección -->
     <record id="view_form_tipo_inspeccion" model="ir.ui.view">
         <field name="name">tipo.inspeccion.form</field>
         <field name="model">btr.tipo.inspeccion</field>
@@ -33,10 +7,21 @@
                 <sheet>
                     <group>
                         <field name="name"/>
-                        <field name="description"/>
+                        <field name="descripcion"/>
                     </group>
                 </sheet>
             </form>
+        </field>
+    </record>
+
+    <record id="view_tree_tipo_inspeccion" model="ir.ui.view">
+        <field name="name">tipo.inspeccion.tree</field>
+        <field name="model">btr.tipo.inspeccion</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="descripcion"/>
+            </tree>
         </field>
     </record>
 </odoo>

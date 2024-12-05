@@ -20,18 +20,15 @@
         'views/inspeccion_views.xml',
         'views/entidad_inspectora_views.xml',
         'views/tipo_inspeccion_views.xml',
-
         'views/menus_views.xml',
-        'data/entidad_inspectora_data.xml',
         'data/tipo_inspeccion_data.xml',
-        'data/inspeccion_data.xml',
     ],
     'assets': {
         'web.assets_backend': [
             'BTR_inspeccion_Rpo7.0/static/description/inspeccion.png',
         ],
     },
-    'images': ['static/description/inspeccion.png'],
+    'images': ['BTR_inspeccion_Rpo7.0/static/description/inspeccion.png'],
     'application': True,
     'installable': True,
 }

@@ -1,14 +1,30 @@
 <odoo>
-    <!-- Acción para listar entidades inspectoras -->
-    <record id="action_btr_entidades" model="ir.actions.act_window">
-        <field name="name">Entidades Inspectoras</field>
-        <field name="res_model">btr.entidad.inspectora</field>
-        <field name="view_mode">tree,form</field>
-        <field name="help" type="html">
-            <p>
-                Aquí puedes gestionar todas las entidades inspectoras registradas.
-                Selecciona una entidad para más detalles o agrega una nueva.
-            </p>
+    <record id="view_form_entidad_inspectora" model="ir.ui.view">
+        <field name="name">entidad.inspectora.form</field>
+        <field name="model">btr.entidad.inspectora</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="contacto"/>
+                        <field name="correo"/>
+                        <field name="telefono"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_entidad_inspectora" model="ir.ui.view">
+        <field name="name">entidad.inspectora.tree</field>
+        <field name="model">btr.entidad.inspectora</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="contacto"/>
+                <field name="correo"/>
+            </tree>
         </field>
     </record>
 </odoo>

@@ -1,16 +1,7 @@
-<!-- Fecha: 2024-12-04 -->
-<!-- Nombre del archivo: menus_views.xml -->
-<!-- Versión del archivo: V2 -->
-
 <odoo>
-    <!-- Menú Principal -->
-    <menuitem id="menu_btr_inspeccion_root" name="Gestión de Inspecciones" sequence="1"
-              web_icon="BTR_inspeccion_Rpo7/static/description/inspeccion.png"/>
+    <menuitem id="menu_btr_inspeccion_root" name="Gestión de Inspecciones" sequence="1"/>
 
-    <!-- Submenús -->
     <menuitem id="menu_btr_inspecciones" name="Inspecciones" parent="menu_btr_inspeccion_root" action="action_btr_inspecciones"/>
-
     <menuitem id="menu_btr_entidades" name="Entidades Inspectoras" parent="menu_btr_inspeccion_root" action="action_btr_entidades"/>
-
     <menuitem id="menu_btr_tipos" name="Tipos de Inspección" parent="menu_btr_inspeccion_root" action="action_btr_tipos"/>
 </odoo>
