@@ -1,18 +1,25 @@
+<!-- Fecha: 2024-12-04 -->
+<!-- Nombre del archivo: entidad_inspectora_views.xml -->
+<!-- Versión del archivo: V2 -->
+
 <odoo>
-    <!-- Acción para listar entidades inspectoras -->
-    <record id="action_btr_entidades" model="ir.actions.act_window">
-        <field name="name">Entidades Inspectoras</field>
-        <field name="res_model">btr.entidad.inspectora</field>
-        <field name="view_mode">tree,form</field>
-        <field name="help" type="html">
-            <p>
-                Administra las entidades responsables de las inspecciones.
-                Puedes agregar, editar o eliminar entidades inspectoras.
-            </p>
+    <record id="view_form_entidad_inspectora" model="ir.ui.view">
+        <field name="name">entidad.inspectora.form</field>
+        <field name="model">btr.entidad.inspectora</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="contacto"/>
+                        <field name="correo"/>
+                        <field name="telefono"/>
+                    </group>
+                </sheet>
+            </form>
         </field>
     </record>
 
-    <!-- Vista en modo lista para Entidades Inspectoras -->
     <record id="view_tree_entidad_inspectora" model="ir.ui.view">
         <field name="name">entidad.inspectora.tree</field>
         <field name="model">btr.entidad.inspectora</field>
@@ -24,13 +31,4 @@
             </tree>
         </field>
     </record>
-
-    <!-- Vista en modo formulario para Entidades Inspectoras -->
-    <record id="view_form_entidad_inspectora" model="ir.ui.view">
-        <field name="name">entidad.inspectora.form</field>
-        <field name="model">btr.entidad.inspectora</field>
-        <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <group>
-            
+</odoo>
