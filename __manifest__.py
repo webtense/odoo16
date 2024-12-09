@@ -4,7 +4,7 @@
 
 {
     'name': 'Gestión de Inspecciones Obligatorias',
-    'version': '16.0.3.3',
+    'version': '16.0.3.4',
     'summary': 'Gestión centralizada de inspecciones obligatorias en instalaciones hoteleras.',
     'description': """
         Este módulo permite gestionar inspecciones obligatorias, incluyendo tipos, responsables y resultados.
