@@ -14,7 +14,7 @@
     'license': 'LGPL-3',
     'depends': ['base', 'maintenance'],
     'data': [
-        'security/security.xml',
+        
         'security/ir.model.access.csv',
         'views/inspeccion_views.xml',
         'views/entidad_inspectora_views.xml',
