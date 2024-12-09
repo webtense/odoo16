@@ -1,10 +1,10 @@
 # Fecha: 2024-12-04
 # Nombre del archivo: __manifest__.py
-# Versión del archivo: V3
+# Versión del archivo: V3.2
 
 {
     'name': 'Gestión de Inspecciones Obligatorias',
-    'version': '16.0.3.0',  # Incremento automático de versión
+    'version': '16.0.3.2',
     'summary': 'Gestión centralizada de inspecciones obligatorias en instalaciones hoteleras.',
     'description': """
         Este módulo permite gestionar inspecciones obligatorias, incluyendo tipos, responsables y resultados.
@@ -26,10 +26,10 @@
     ],
     'assets': {
         'web.assets_backend': [
-            'BTR_inspeccion_Rpo7/static/description/inspeccion.png',
+            '/BTR_inspeccion_Rpo7/static/description/inspeccion.png',
         ],
     },
-    'images': ['BTR_inspeccion_Rpo7/static/description/inspeccion.png'],
+    'images': ['/BTR_inspeccion_Rpo7/static/description/inspeccion.png'],
     'application': True,
     'installable': True,
 }

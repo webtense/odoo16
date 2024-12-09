@@ -1,12 +1,6 @@
-<!-- Fecha: 2024-12-04 -->
-<!-- Nombre del archivo: tipo_inspeccion_data.xml -->
-<!-- Versión del archivo: V1 -->
-
 <odoo>
-    <data>
-        <record id="tipo_inspeccion_seguridad" model="btr.tipo.inspeccion">
-            <field name="name">Inspección de Seguridad</field>
-            <field name="descripcion">Verificación de equipos y sistemas de seguridad.</field>
-        </record>
-    </data>
+    <record id="tipo_inspeccion_seguridad" model="btr.tipo.inspeccion">
+        <field name="name">Inspección de Seguridad</field>
+        <field name="descripcion">Verificación de equipos y sistemas de seguridad.</field>
+    </record>
 </odoo>

@@ -1,7 +1,3 @@
-<!-- Fecha: 2024-12-04 -->
-<!-- Nombre del archivo: entidad_inspectora_views.xml -->
-<!-- Versión del archivo: V2 -->
-
 <odoo>
     <record id="view_form_entidad_inspectora" model="ir.ui.view">
         <field name="name">entidad.inspectora.form</field>
@@ -17,18 +13,6 @@
                     </group>
                 </sheet>
             </form>
-        </field>
-    </record>
-
-    <record id="view_tree_entidad_inspectora" model="ir.ui.view">
-        <field name="name">entidad.inspectora.tree</field>
-        <field name="model">btr.entidad.inspectora</field>
-        <field name="arch" type="xml">
-            <tree>
-                <field name="name"/>
-                <field name="contacto"/>
-                <field name="correo"/>
-            </tree>
         </field>
     </record>
 </odoo>

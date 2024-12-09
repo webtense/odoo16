@@ -1,7 +1,3 @@
-<!-- Fecha: 2024-12-04 -->
-<!-- Nombre del archivo: tipo_inspeccion_views.xml -->
-<!-- Versión del archivo: V1 -->
-
 <odoo>
     <record id="view_form_tipo_inspeccion" model="ir.ui.view">
         <field name="name">tipo.inspeccion.form</field>
