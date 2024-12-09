@@ -1,7 +1,6 @@
 <odoo>
     <!-- Menú Principal -->
-    <menuitem id="menu_btr_inspeccion_root" name="Gestión de Inspecciones" sequence="1"
-              web_icon="BTR_inspeccion_Rpo7/static/description/inspeccion.png"/>
+    <menuitem id="menu_btr_inspeccion_root" name="Gestión de Inspecciones" sequence="1" web_icon="BTR_inspeccion_Rpo7/static/description/inspeccion.png"/>
 
     <!-- Submenús -->
     <menuitem id="menu_btr_inspecciones" name="Inspecciones" parent="menu_btr_inspeccion_root" action="action_btr_inspecciones"/>
