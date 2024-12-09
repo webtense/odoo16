@@ -1,16 +1,6 @@
 <odoo>
-    <record id="view_form_tipo_inspeccion" model="ir.ui.view">
-        <field name="name">tipo.inspeccion.form</field>
-        <field name="model">btr.tipo.inspeccion</field>
-        <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <group>
-                        <field name="name"/>
-                        <field name="descripcion"/>
-                    </group>
-                </sheet>
-            </form>
-        </field>
+    <record id="tipo_inspeccion_seguridad" model="btr.tipo.inspeccion">
+        <field name="name">Inspección de Seguridad</field>
+        <field name="descripcion">Verificación de equipos y sistemas de seguridad.</field>
     </record>
 </odoo>

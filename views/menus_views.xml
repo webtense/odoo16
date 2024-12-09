@@ -1,7 +1,3 @@
-<!-- Fecha: 2024-12-04 -->
-<!-- Nombre del archivo: menus_views.xml -->
-<!-- Versión del archivo: V2 -->
-
 <odoo>
     <menuitem id="menu_btr_inspeccion_root" name="Gestión de Inspecciones" sequence="1"/>
 

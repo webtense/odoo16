@@ -1,18 +1,8 @@
 <odoo>
-    <record id="view_form_entidad_inspectora" model="ir.ui.view">
-        <field name="name">entidad.inspectora.form</field>
-        <field name="model">btr.entidad.inspectora</field>
-        <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <group>
-                        <field name="name"/>
-                        <field name="contacto"/>
-                        <field name="correo"/>
-                        <field name="telefono"/>
-                    </group>
-                </sheet>
-            </form>
-        </field>
+    <record id="entidad_inspectora_1" model="btr.entidad.inspectora">
+        <field name="name">Entidad de Seguridad</field>
+        <field name="contacto">Juan Pérez</field>
+        <field name="correo">contacto@seguridad.com</field>
+        <field name="telefono">+1 234 567 890</field>
     </record>
 </odoo>
