@@ -6,8 +6,9 @@
     <record id="inspeccion_1" model="btr.inspeccion">
         <field name="name">Primera Inspección</field>
         <field name="fecha_inspeccion">2024-12-10</field>
-        <field name="estado">proxima</field>
+        <field name="estado">próxima</field>
         <field name="entidad_id" ref="entidad_inspectora_1"/>
         <field name="tipo_id" ref="tipo_inspeccion_seguridad"/>
     </record>
 </odoo>
+

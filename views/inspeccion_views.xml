@@ -1,6 +1,6 @@
 <record id="action_btr_inspecciones" model="ir.actions.act_window">
     <field name="name">Inspecciones</field>
     <field name="res_model">btr.inspeccion</field>
-    <field name="view_mode">tree,form</field>
+    <field name="view_mode">tree, form</field>
     <field name="view_id" ref="view_tree_inspeccion"/>
 </record>
