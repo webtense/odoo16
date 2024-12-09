@@ -1,3 +1,7 @@
+# Fecha: 2024-12-04
+# Nombre del archivo: inspeccion.py
+# Versión del archivo: V2
+
 from odoo import models, fields
 
 class Inspeccion(models.Model):

@@ -1,3 +1,7 @@
+# Fecha: 2024-12-04
+# Nombre del archivo: entidad_inspectora.py
+# Versión del archivo: V2
+
 from odoo import models, fields
 
 class EntidadInspectora(models.Model):

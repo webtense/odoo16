@@ -1,23 +1,6 @@
-<odoo>
-    <record id="view_form_inspeccion" model="ir.ui.view">
-        <field name="name">inspeccion.form</field>
-        <field name="model">btr.inspeccion</field>
-        <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <group>
-                        <field name="name"/>
-                        <field name="fecha_inspeccion"/>
-                        <field name="estado"/>
-                        <field name="tipo_id"/>
-                        <field name="entidad_id"/>
-                    </group>
-                    <group>
-                        <field name="documento"/>
-                        <field name="documento_nombre" readonly="1"/>
-                    </group>
-                </sheet>
-            </form>
-        </field>
-    </record>
-</odoo>
+<record id="action_btr_inspecciones" model="ir.actions.act_window">
+    <field name="name">Inspecciones</field>
+    <field name="res_model">btr.inspeccion</field>
+    <field name="view_mode">tree,form</field>
+    <field name="view_id" ref="view_tree_inspeccion"/>
+</record>

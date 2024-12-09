@@ -1,10 +1,10 @@
 # Fecha: 2024-12-04
 # Nombre del archivo: __manifest__.py
-# Versión del archivo: V3.2
+# Versión del archivo: V3.3
 
 {
     'name': 'Gestión de Inspecciones Obligatorias',
-    'version': '16.0.3.2',
+    'version': '16.0.3.3',
     'summary': 'Gestión centralizada de inspecciones obligatorias en instalaciones hoteleras.',
     'description': """
         Este módulo permite gestionar inspecciones obligatorias, incluyendo tipos, responsables y resultados.
