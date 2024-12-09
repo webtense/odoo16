@@ -1,0 +1,47 @@
+<!-- Creado por Andres Sanchez - Fecha: 2024-11-26 -->
+<odoo>
+    <!-- Vista Tree -->
+    <record id="view_inspection_management_tree" model="ir.ui.view">
+        <field name="name">inspection.management.tree</field>
+        <field name="model">inspection.management</field>
+        <field name="arch" type="xml">
+            <tree string="Inspecciones">
+                <field name="name"/>
+                <field name="entity_id"/>
+                <field name="next_inspection_date"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Vista Form -->
+    <record id="view_inspection_management_form" model="ir.ui.view">
+        <field name="name">inspection.management.form</field>
+        <field name="model">inspection.management</field>
+        <field name="arch" type="xml">
+            <form string="Inspección">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="entity_id"/>
+                        <field name="location_id"/>
+                    </group>
+                    <group>
+                        <field name="last_inspection_date"/>
+                        <field name="next_inspection_date"/>
+                        <field name="state"/>
+                    </group>
+                    <field name="items"/>
+                    <field name="certificate_attachment_id" widget="many2many_binary"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Acción para Inspecciones -->
+    <record id="action_inspection_management" model="ir.actions.act_window">
+        <field name="name">Gestión de Inspecciones</field>
+        <field name="res_model">inspection.management</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

@@ -1,0 +1,9 @@
+<!-- Creado por Andres Sanchez - Fecha: 2024-11-26 -->
+<odoo>
+    <!-- Acción para Entidades Inspectoras -->
+    <record id="action_inspection_entity" model="ir.actions.act_window">
+        <field name="name">Entidades Inspectoras</field>
+        <field name="res_model">inspection.entity</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

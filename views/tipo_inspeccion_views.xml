@@ -1,6 +1,0 @@
-<odoo>
-    <record id="tipo_inspeccion_seguridad" model="btr.tipo.inspeccion">
-        <field name="name">Inspección de Seguridad</field>
-        <field name="descripcion">Verificación de equipos y sistemas de seguridad.</field>
-    </record>
-</odoo>

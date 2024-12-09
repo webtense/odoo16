@@ -1,7 +1,4 @@
-# Fecha: 2024-12-04
-# Nombre del archivo: __init__.py
-# Versión del archivo: V1
-
-from . import inspeccion
-from . import entidad_inspectora
-from . import tipo_inspeccion
+# Creado por Andres Sanchez - Fecha: 2024-11-07
+from . import inspection_management
+from . import inspection_entity
+from . import inspection_type

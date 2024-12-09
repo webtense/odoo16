@@ -1,0 +1,13 @@
+<!-- Creado por Andres Sanchez - Fecha: 2024-11-07 -->
+<odoo>
+    <record id="view_inspection_calendar" model="ir.ui.view">
+        <field name="name">inspection.management.calendar</field>
+        <field name="model">inspection.management</field>
+        <field name="arch" type="xml">
+            <calendar string="Calendario de Inspecciones" date_start="next_inspection_date">
+                <field name="name"/>
+                <field name="location_id"/>
+            </calendar>
+        </field>
+    </record>
+</odoo>

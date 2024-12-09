@@ -1,34 +1,34 @@
-# Fecha: 2024-12-04
-# Nombre del archivo: __manifest__.py
-# Versión del archivo: V3.3
-
+# Creado por Andres Sanchez - Fecha: 2024-11-07
 {
-    'name': 'Gestión de Inspecciones Obligatorias',
-    'version': '16.0.3.7',
-    'summary': 'Gestión centralizada de inspecciones obligatorias en instalaciones hoteleras.',
-    'description': """
-        Este módulo permite gestionar inspecciones obligatorias, incluyendo tipos, responsables y resultados.
+    'name': "Gestión de Inspecciones Obligatorias",
+    'version': '3.0',
+    'summary': """
+        Gestión centralizada de inspecciones obligatorias en instalaciones hoteleras.
+        Cronología:
+        - Versión 2.6: Añadido soporte para vista Kanban y resaltado de inspecciones próximas en rojo.
+        - Versión 2.5: Inclusión de Entidades Inspectoras con campos de contacto.
+        - Versión 2.4: Introducción del modelo básico de inspecciones con periodicidad y adjuntos.
+        - Versión 2.7: Se añade el módulo de Tipos de Inspección con estados editables.
     """,
-    'category': 'Operations',
-    'author': 'Andrés Sánchez -- Boi Taull Resort',
+    'author': "Andres Sanchez",
+    'website': "https://boitaullresort.com",
     'license': 'LGPL-3',
-    'depends': ['base', 'maintenance'],
+    'category': 'Maintenance',
+    'depends': ['maintenance', 'mail'],
     'data': [
         'security/ir.model.access.csv',
-        'views/inspeccion_views.xml',
-        'views/entidad_inspectora_views.xml',
-        'views/tipo_inspeccion_views.xml',
-        'views/menus_views.xml',
-        'data/entidad_inspectora_data.xml',
-        'data/tipo_inspeccion_data.xml',
-        'data/inspeccion_data.xml',
+        'views/inspection_views.xml',
+        'views/inspection_action_views.xml',
+        'views/inspection_menu_views.xml',
+        'views/inspection_calendar_views.xml',
+        'views/inspection_entity_views.xml',
+        'views/inspection_type_views.xml',
+        'data/inspection_data.xml',
     ],
-    'assets': {
-        'web.assets_backend': [
-            '/BTR_inspeccion_Rpo7/static/description/inspeccion.png',
-        ],
-    },
-    'images': ['/BTR_inspeccion_Rpo7/static/description/inspeccion.png'],
-    'application': True,
+    
     'installable': True,
+    'application': True,
+    'auto_install': False,
 }
+
+

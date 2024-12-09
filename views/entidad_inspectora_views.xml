@@ -1,8 +1,0 @@
-<odoo>
-    <record id="entidad_inspectora_1" model="btr.entidad.inspectora">
-        <field name="name">Entidad de Seguridad</field>
-        <field name="contacto">Juan Pérez</field>
-        <field name="correo">contacto@seguridad.com</field>
-        <field name="telefono">+1 234 567 890</field>
-    </record>
-</odoo>

@@ -1,4 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_inspeccion,btr.inspeccion,model_btr_inspeccion,,1,1,1,1
-access_entidad_inspectora,btr.entidad.inspectora,model_btr_entidad_inspectora,,1,1,1,1
-access_tipo_inspeccion,btr.tipo.inspeccion,model_btr_tipo_inspeccion,,1,1,1,1
+access_inspection_management,access_inspection_management,model_inspection_management,base.group_user,1,1,1,1
+access_inspection_entity,access_inspection_entity,model_inspection_entity,base.group_user,1,1,1,1
+access_inspection_type,access_inspection_type,model_inspection_type,base.group_user,1,1,1,1

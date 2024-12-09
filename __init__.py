@@ -1,5 +1,2 @@
-# Fecha: 2024-12-04
-# Nombre del archivo: __init__.py
-# Versión del archivo: V1
-
+# Created by Andres Sanchez - Date: 2024-11-07
 from . import models
