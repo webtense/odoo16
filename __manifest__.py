@@ -15,7 +15,7 @@
     'depends': ['base', 'maintenance'],
     'data': [
         'security/ir.model.access.csv',
- #       'views/inspeccion_views.xml',
+        'views/inspeccion_views.xml',
  #      'views/entidad_inspectora_views.xml',
  #       'views/tipo_inspeccion_views.xml',
  #       'views/menus_views.xml',
